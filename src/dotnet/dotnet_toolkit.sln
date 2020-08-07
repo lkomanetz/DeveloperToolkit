@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{BDEA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{1C94AA7F-73C3-4364-ACBC-198F6B6818C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventing", "Eventing\Eventing.csproj", "{7C087E29-7CE3-4317-B9FF-469E554DA58D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{1C94AA7F-73C3-4364-ACBC-198F6B6818C6}.Release|x64.Build.0 = Release|Any CPU
 		{1C94AA7F-73C3-4364-ACBC-198F6B6818C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{1C94AA7F-73C3-4364-ACBC-198F6B6818C6}.Release|x86.Build.0 = Release|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Debug|x64.Build.0 = Debug|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Debug|x86.Build.0 = Debug|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Release|x64.ActiveCfg = Release|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Release|x64.Build.0 = Release|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Release|x86.ActiveCfg = Release|Any CPU
+		{7C087E29-7CE3-4317-B9FF-469E554DA58D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

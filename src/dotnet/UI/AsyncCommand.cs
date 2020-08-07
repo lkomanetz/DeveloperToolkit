@@ -1,3 +1,4 @@
+using Dtk.Extensions;
 using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -15,7 +16,7 @@ namespace Dtk.UI {
 
 		public AsyncCommandBase(Action<Exception> errorHandler) => _errorHandler = errorHandler;
 
-		public event Eventhandler CanExecuteChanged = delegate { };
+		public event EventHandler CanExecuteChanged = delegate { };
 
 		private bool _isRunning;
 		public bool IsRunning {
@@ -42,7 +43,12 @@ namespace Dtk.UI {
 
 	public class AsyncDelegateCommand<T> : AsyncCommandBase {
 		
+		private readonly Func<T, Task> _func;
 
+		public AsyncDelegateCommand(Func<T, Task> func, Action<Exception> errorHandler) : base(errorHandler) =>
+			_func = func;
+
+		public override Task ExecuteAsync(object parameter) => _func((T)parameter);
 
 	}
 
@@ -50,7 +56,7 @@ namespace Dtk.UI {
 
 		private readonly Func<Task> _func;
 
-		public AsyncDelegateCommand(Func<task func, Action<Exception> errorHandler) : base(errorHandler) =>
+		public AsyncDelegateCommand(Func<Task> func, Action<Exception> errorHandler) : base(errorHandler) =>
 			_func = func;
 
 		public override Task ExecuteAsync(object parameter) => _func();
