@@ -8,12 +8,7 @@ namespace Dtk.UI {
 		private bool _isWaiting;
 		public bool IsWaiting {
 			get => _isWaiting;
-			set => this.SetPropertyValue(
-				vm => vm.IsWaiting,
-				value,
-				ref _isWaiting,
-				FirePropertyChanged
-			);
+			set => this.SetProperty(value, ref _isWaiting);
 		}
 
 		protected async Task DoWhileWaitingAsync(Func<Task> func) {

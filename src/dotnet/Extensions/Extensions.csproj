@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Dtk.Extensions</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Logan Komanetz</Authors>
+    <Product>Developer's Toolkit</Product>
+    <Description>Type extensions for the .NET Developer toolkit</Description>
+    <PackageProjectUrl>https://github.com/lkomanetz/DeveloperToolkit/tree/dev/src/dotnet</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>

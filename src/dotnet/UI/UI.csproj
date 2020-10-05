@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>Dtk.UI</PackageId>
+    <Authors>Logan Komanetz</Authors>
+    <Product>Developer's Toolkit</Product>
+    <Description>Simple .NET tooling for UI development</Description>
+    <PackageProjectUrl>https://github.com/lkomanetz/DeveloperToolkit/</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

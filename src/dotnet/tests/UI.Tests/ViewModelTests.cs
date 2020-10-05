@@ -23,10 +23,10 @@ namespace UI.Tests {
 		public void SetPropertyValueUpdatesPrivateMember() {
 			var vm = new TestViewModel();
 			Assert.Equal(0, vm.SomeNumber);
-			vm.SomeNumber = 1;
-			Assert.Equal(1, vm.SomeNumber);
-			vm.SomeNumber = 2;
-			Assert.Equal(2, vm.SomeNumber);
+            vm.SomeNumber = 1;
+            Assert.Equal(1, vm.SomeNumber);
+            vm.SomeNumber = 2;
+            Assert.Equal(2, vm.SomeNumber);
 		}
 
 		private class TestViewModel : ViewModelWithWait {
@@ -36,16 +36,10 @@ namespace UI.Tests {
 			private int _someNumber;
 			public int SomeNumber {
 				get => _someNumber;
-				set => this.SetPropertyValue(
-					vm => vm.SomeNumber,
-					value,
-					ref _someNumber,
-					FirePropertyChanged
-				);
+				set => this.SetProperty(value, ref _someNumber);
 			}
 
 		}
-
     }
 
 }
