@@ -8,6 +8,9 @@
     <Product>Developer's Toolkit</Product>
     <Description>Type extensions for the .NET Developer toolkit</Description>
     <PackageProjectUrl>https://github.com/lkomanetz/DeveloperToolkit/tree/dev/src/dotnet</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>

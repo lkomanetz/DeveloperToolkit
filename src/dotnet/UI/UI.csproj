@@ -8,6 +8,9 @@
     <Description>Simple .NET tooling for UI development</Description>
     <PackageProjectUrl>https://github.com/lkomanetz/DeveloperToolkit/</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

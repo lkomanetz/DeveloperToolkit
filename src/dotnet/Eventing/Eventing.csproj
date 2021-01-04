@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Eventing</AssemblyName>
+    <PackageId>Dtk.Eventing</PackageId>
+    <Authors>Logan Komanetz</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>Developer's Toolkit</Product>
+    <Description>Event Aggregation module for the Developer Toolkit</Description>
+    <PackageProjectUrl>https://github.com/lkomanetz/DeveloperToolkit</PackageProjectUrl>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
 </Project>
